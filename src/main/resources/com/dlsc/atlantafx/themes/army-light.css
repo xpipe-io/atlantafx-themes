@@ -1156,7 +1156,7 @@ Text {
 .check-box {
   -fx-text-fill: -color-fg-default;
   -fx-label-padding: 0 2px 0 6px;
-  -fx-alignment: TOP-LEFT;
+  -fx-alignment: CENTER-LEFT;
 }
 .check-box > .box {
   -fx-background-color: -color-border-default, -color-bg-default;
@@ -2928,12 +2928,6 @@ Text {
 .split-menu-button:hover > .arrow-button > .arrow {
   -fx-background-color: -color-button-fg-hover;
 }
-.menu-button:hover .font-icon, .menu-button:hover .ikonli-font-icon,
-.split-menu-button:hover .font-icon,
-.split-menu-button:hover .ikonli-font-icon {
-  -fx-icon-color: -color-button-fg-hover;
-  -fx-fill: -color-button-fg-hover;
-}
 .menu-button:focused,
 .split-menu-button:focused {
   -fx-background-color: -color-button-border-focused, -color-button-bg-focused;
@@ -3010,12 +3004,6 @@ Text {
   -color-button-fg: -color-accent-fg;
   -color-button-bg-hover: -color-accent-subtle;
 }
-.menu-button.accent .menu-item .font-icon, .menu-button.accent .menu-item .ikonli-font-icon,
-.split-menu-button.accent .menu-item .font-icon,
-.split-menu-button.accent .menu-item .ikonli-font-icon {
-  -fx-icon-color: -color-fg-default;
-  -fx-fill: -color-fg-default;
-}
 .menu-button.success,
 .split-menu-button.success {
   -color-button-bg: -color-success-emphasis;
@@ -3042,12 +3030,6 @@ Text {
 .split-menu-button.success.flat {
   -color-button-fg: -color-success-fg;
   -color-button-bg-hover: -color-success-subtle;
-}
-.menu-button.success .menu-item .font-icon, .menu-button.success .menu-item .ikonli-font-icon,
-.split-menu-button.success .menu-item .font-icon,
-.split-menu-button.success .menu-item .ikonli-font-icon {
-  -fx-icon-color: -color-fg-default;
-  -fx-fill: -color-fg-default;
 }
 .menu-button.danger,
 .split-menu-button.danger {
@@ -3076,12 +3058,6 @@ Text {
   -color-button-fg: -color-danger-fg;
   -color-button-bg-hover: -color-danger-subtle;
 }
-.menu-button.danger .menu-item .font-icon, .menu-button.danger .menu-item .ikonli-font-icon,
-.split-menu-button.danger .menu-item .font-icon,
-.split-menu-button.danger .menu-item .ikonli-font-icon {
-  -fx-icon-color: -color-fg-default;
-  -fx-fill: -color-fg-default;
-}
 .menu-button.flat,
 .split-menu-button.flat {
   -color-button-bg: transparent;
@@ -3101,6 +3077,18 @@ Text {
 .menu-button:disabled > .label,
 .split-menu-button:disabled > .label {
   -fx-opacity: 1;
+}
+.menu-button .menu-item .font-icon, .menu-button .menu-item .ikonli-font-icon,
+.split-menu-button .menu-item .font-icon,
+.split-menu-button .menu-item .ikonli-font-icon {
+  -fx-icon-color: -color-fg-default;
+  -fx-fill: -color-fg-default;
+}
+.menu-button .menu-item:hover .font-icon, .menu-button .menu-item:hover .ikonli-font-icon,
+.split-menu-button .menu-item:hover .font-icon,
+.split-menu-button .menu-item:hover .ikonli-font-icon {
+  -fx-icon-color: -color-fg-default;
+  -fx-fill: -color-fg-default;
 }
 
 .menu-button.no-arrow > .arrow-button {
@@ -3623,7 +3611,7 @@ Text {
   -fx-background-color: -color-bg-default;
   -fx-text-fill: -color-fg-default;
   -fx-label-padding: 0 2px 0 6px;
-  -fx-alignment: TOP-LEFT;
+  -fx-alignment: CENTER-LEFT;
 }
 .radio-button > .radio {
   -fx-background-color: -color-border-default, -color-bg-default;
