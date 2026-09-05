@@ -4,10 +4,10 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <name>AtlantFX Themes</name>
-    <groupId>com.dlsc.atlantafx</groupId>
-    <artifactId>themes</artifactId>
+    <groupId>io.xpipe</groupId>
+    <artifactId>atlantafx-themes</artifactId>
     <packaging>jar</packaging>
-    <version>1.9.0</version>
+    <version>1.9.1</version>
 
     <parent>
         <groupId>com.dlsc</groupId>
@@ -41,7 +41,7 @@
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 
         <sass.version>1.54.4</sass.version>
-        <atlantafx.version>2.1.0</atlantafx.version>
+        <atlantafx.version>2.1.1</atlantafx.version>
 
         <scss.inputDir>${project.basedir}/src</scss.inputDir>
         <css.outputDir>${project.basedir}/src/main/resources/com/dlsc/atlantafx/themes</css.outputDir>
@@ -49,7 +49,7 @@
 
     <dependencies>
         <dependency>
-            <groupId>io.github.mkpaz</groupId>
+            <groupId>io.xpipe</groupId>
             <artifactId>atlantafx-base</artifactId>
             <version>${atlantafx.version}</version>
         </dependency>
@@ -83,7 +83,7 @@
                         <configuration>
                             <artifactItems>
                                 <artifactItem>
-                                    <groupId>io.github.mkpaz</groupId>
+                                    <groupId>io.xpipe</groupId>
                                     <artifactId>atlantafx-styles</artifactId>
                                     <version>${atlantafx.version}</version>
                                     <type>jar</type>
